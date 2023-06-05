@@ -21,6 +21,8 @@ services:
       - mysql
     ports:
       - '3000:3000'
+      - '1234:1234'
+      - '26162:26162'
     tmpfs:
       - /tmp
     stdin_open: true
