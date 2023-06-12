@@ -10,6 +10,13 @@
     <strong>Content:</strong>
     <%= @article.content %>
   </p>
+
+  <% if @article.thumbnail.attached? %>
+    <p>
+      <strong>Thumbnail:</strong>
+      <%= image_tag @article.thumbnail %>
+    </p>
+  <% end %>
 </div>
 
 <div>
