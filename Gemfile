@@ -16,8 +16,13 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
-  gem 'ruby-debug-ide'
+
   gem 'debase', '0.2.5.beta2'
+  gem 'ruby-debug-ide'
+
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'gimei'
 end
 
 group :development do
@@ -26,4 +31,8 @@ group :development do
   gem 'rubocop-rails'
   gem 'rubocop-rspec'
   gem 'solargraph'
+end
+
+group :test do
+  gem 'rspec-rails', '~> 6.0.0'
 end
